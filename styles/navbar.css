@@ -1,0 +1,31 @@
+#navbar{
+    position:  absolute;
+    top : 0;
+    left: 0 ;
+    right : 0;
+    background-color:teal ;
+    display: flex;
+    justify-content: space-evenly;
+}
+#sub-nav{
+    display: flex;
+    justify-content: space-evenly ;
+}
+
+#sub-nav div{
+    margin: 5% 2%;
+    width: 100px;
+}
+
+#sub-nav button{
+    margin: 2% auto;
+    width: 100px;
+    width: 300px;
+    padding: 8px;
+    background-color: unset ;
+    border: unset;
+}
+
+#navbar h1{
+    color:skyblue ;
+}

@@ -3,7 +3,7 @@ function navbar(){
     <div>
         <h1>TRUE GUITAR LEARNING</h1>
     </div>
-    <div>
+    <div id="sub-nav">
         <div>Home</div>
         <div>About</div>
         <div>Services</div>
