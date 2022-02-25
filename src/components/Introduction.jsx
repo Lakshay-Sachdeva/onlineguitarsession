@@ -7,28 +7,36 @@ export const Introduction = () => {
         <h1>Introducing The Online Guitar Sessions</h1>
         <p>Interactive Sessions, no recorded video guaranteed</p>
         <Buttons>
-          <Demo></Demo>
-          <Chat></Chat>
-          <WatchVideo></WatchVideo>
+          <Demo>Book Demo Session</Demo>
+          <Chat>
+            <img src="/images/whatsapp.png" alt="chat" />
+          </Chat>
+          <WatchVideo>
+            <img src="/images/playButton.svg" alt="watchVideo" />
+            <span>Watch Video</span>
+          </WatchVideo>
         </Buttons>
       </Text>
-      <Img />
+      <Img src="/images/hero-img.png" alt="hero image" />
     </Container>
   );
 };
 
 const Container = styled.div`
   background-color: #37517e;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: -10px;
   color: #f9f9f9;
   font-family: Jost, sans-serif;
+  margin: -8px;
 `;
 
 const Text = styled.div`
+  text-wrap: wrap;
+  width: 40%;
+
   h1 {
     font-weight: 700;
     font-size: 48px;
@@ -42,12 +50,62 @@ const Text = styled.div`
   }
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+  width: 30%;
+  margin: 10px;
+  object-fit: contain;
+  animation: bounce 2s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.05, 0.5, 0.5);
+  animation-iteration-count: infinite;
 
-const Buttons = styled.div``;
+  @keyframes bounce {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(0, 50px, 0);
+    }
+  }
+`;
 
-const Demo = styled.a``;
+const Buttons = styled.div`
+  justify-content: space-evenly;
+  margin: 10px 5px;
+`;
 
-const Chat = styled.a``;
+const Demo = styled.a`
+  text-decoration: none;
+  color: #f9f9f9;
+  border: 1px solid #47b2e4;
+  background-color: #47b2e4;
+  padding: 8px;
+  border-radius: 25px;
+  margin: auto 10px;
+`;
 
-const WatchVideo = styled.a``;
+const Chat = styled.a`
+  width: 16px;
+  margin: auto 8px;
+  margin: auto 10px;
+
+  img {
+    background: transparent;
+    width: 4.5%;
+    fill: #f9f9f9
+
+    &:hover {
+      fill: #47b2e4;
+    }
+  }
+`;
+
+const WatchVideo = styled.a`
+  margin: auto 10px;
+  img {
+    width: 4%;
+  }
+  span {
+    padding: 8px;
+  }
+`;

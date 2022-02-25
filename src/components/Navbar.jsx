@@ -20,7 +20,7 @@ const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  background-color: #37517e;
+  background-color: transparent;
   color: #f9f9f9;
   position: fixed;
   top: 0;
