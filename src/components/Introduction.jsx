@@ -79,9 +79,13 @@ const Demo = styled.a`
   color: #f9f9f9;
   border: 1px solid #47b2e4;
   background-color: #47b2e4;
-  padding: 8px;
+  padding: 8px 16px;
   border-radius: 25px;
   margin: auto 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Jost, sans-serif;
+  line-height: 24px;
 `;
 
 const Chat = styled.a`
@@ -107,5 +111,9 @@ const WatchVideo = styled.a`
   }
   span {
     padding: 8px;
+    font-weight: 400;
+    font-family: OpenSans, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
   }
 `;
