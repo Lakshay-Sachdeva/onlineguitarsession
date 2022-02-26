@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ServiceCard = ({ icon, heading, details }) => {
   return (
     <Box>
-      <Icon>{icon}</Icon>
+      <Icon src={icon} />
       <Title>{heading}</Title>
       <Details>{details}</Details>
     </Box>
@@ -11,8 +11,10 @@ export const ServiceCard = ({ icon, heading, details }) => {
 };
 
 const Box = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 20%;
+  height: 250px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   &:hover {
     transition: all ease-in-out 0.4s;
@@ -34,6 +36,7 @@ const Title = styled.h2`
   font-family: Jost, sans-serif;
   line-height: 29px;
   color: #3f82b1;
+  margin: 20px 10px;
 `;
 
 const Details = styled.p`
@@ -42,4 +45,5 @@ const Details = styled.p`
   font-family: OpenSans, sans-serif;
   line-height: 24px;
   color: #444444;
+  margin: 20px 10px;
 `;

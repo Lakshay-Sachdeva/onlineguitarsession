@@ -31,6 +31,7 @@ const Container = styled.div`
   color: #f9f9f9;
   font-family: Jost, sans-serif;
   margin: -8px;
+  padding-top: 38px;
 `;
 
 const Text = styled.div`

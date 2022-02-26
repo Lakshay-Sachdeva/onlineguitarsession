@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const About = () => {
   return (
     <Container>
-      <Heading>About</Heading>
+      <Heading>ABOUT</Heading>
       <FlexBox>
         <TextBox>
           <p>
@@ -44,38 +44,16 @@ export const About = () => {
 const Container = styled.div`
   width: 80%;
   text-align: center;
-  margin: 100px auto;
+  margin: 100px auto 20px;
   padding: 10px;
 `;
 
 const Heading = styled.h1`
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 900;
   font-family: Jost, sans-serif;
   line-height: 38px;
   color: #37517e;
-
-  &:before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 90px;
-    height: 1px;
-    background: #ddd;
-    bottom: 1px;
-    left: calc(50% - 45px);
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: #47b2e4;
-    bottom: 0;
-    left: calc(50% - 20px);
-  }
 `;
 
 const FlexBox = styled.div`
