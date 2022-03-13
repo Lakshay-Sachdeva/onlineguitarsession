@@ -12,7 +12,7 @@ export const Introduction = () => {
             <img src="/images/whatsapp.png" alt="chat" />
           </Chat>
           <WatchVideo>
-            <img src="/images/playButton.svg" alt="watchVideo" />
+          {/* <icon={Fa500Px size="28px" }/>  */}
             <span>Watch Video</span>
           </WatchVideo>
         </Buttons>
