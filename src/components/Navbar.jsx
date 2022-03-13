@@ -3,7 +3,12 @@ import styled from "styled-components";
 export const Navbar = () => {
   return (
     <Container>
-      <Heading>The Online Guitar Session</Heading>
+      <div>
+        <Image>
+          <img src="/images/guitar-logo.png" alt="" />
+        </Image>
+        <Heading>The Online Guitar Session</Heading>
+      </div>
       <Menu>
         <SubMenu>Home</SubMenu>
         <SubMenu>About</SubMenu>
@@ -68,4 +73,9 @@ const MenuButton = styled.a`
   &:hover {
     background-color: #31a9e1;
   }
+`;
+
+const Image = styled.div`
+  width: 20px;
+  height: 20px;
 `;
